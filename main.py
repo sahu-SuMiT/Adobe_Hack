@@ -58,14 +58,25 @@ def main() -> None:
     if sys.platform == 'darwin':  # macOS
         multiprocessing.set_start_method('spawn')
     
-    # Default directories
-    input_dir = "/app/input"
-    output_dir = "/app/output"
+    # Default directories - use local paths instead of Docker paths
+    input_dir = os.path.join(os.getcwd(), "input")
+    output_dir = os.path.join(os.getcwd(), "output")
     
     # Allow overriding directories for testing
     if len(sys.argv) > 2:
         input_dir = sys.argv[1]
         output_dir = sys.argv[2]
+    
+    # Ensure input directory exists
+    if not os.path.exists(input_dir):
+        logger.error(f"Input directory not found: {input_dir}")
+        logger.info(f"Creating input directory: {input_dir}")
+        os.makedirs(input_dir, exist_ok=True)
+    
+    # Ensure output directory exists
+    if not os.path.exists(output_dir):
+        logger.info(f"Creating output directory: {output_dir}")
+        os.makedirs(output_dir, exist_ok=True)
     
     logger.info(f"Starting PDF outline extraction: {input_dir} -> {output_dir}")
     process_pdf_directory(input_dir, output_dir)

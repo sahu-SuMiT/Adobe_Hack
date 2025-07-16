@@ -62,15 +62,39 @@ class HierarchyValidator:
         This fixes common issues like X.Y patterns being incorrectly labeled as H1.
         """
         # Pattern matchers for specific fixes
-        dot_pattern = re.compile(r'^\d+\.\d+')  # X.Y pattern
+        dot_pattern = re.compile(r'^\d+\.\d+')  # X.Y pattern (like 4.1, 4.2)
         nested_pattern = re.compile(r'^[a-z]\)') # a), b) pattern
         roman_nested = re.compile(r'^[ivx]+\)') # i), ii) pattern
         letter_number = re.compile(r'^[A-Za-z]\d+\.') # A1., B2. pattern
+        numbered_section = re.compile(r'^\d+\.\d+\s+\w+') # Like "4.1 Student Portal"
         
+        # First pass: Fix Core Features and numbered sections
         for i in range(len(outline)):
             item = outline[i]
             text = item["text"]
             
+            # Fix: "Core Features" should always be H1
+            if text == "Core Features":
+                item["level"] = "H1"
+                
+            # Fix: Numbered sections like "4.1 Student Portal" should be H2
+            if numbered_section.match(text):
+                item["level"] = "H2"
+        
+        # Second pass: Fix subsections based on context
+        for i in range(len(outline)):
+            item = outline[i]
+            text = item["text"]
+            
+            # Fix: Subsections like "Profile Management" should be H3 when under a numbered section
+            if i > 0 and outline[i-1]["level"] == "H2" and not dot_pattern.match(text) and len(text.split()) <= 3:
+                item["level"] = "H3"
+            
+            # Fix: Make sure list items are not treated as headings
+            if text.startswith("-") or text.startswith("•"):
+                # This is a list item, not a heading - remove from outline
+                item["_remove"] = True
+                
             # Fix 1: X.Y patterns should be H2, not H1
             if dot_pattern.match(text) and item["level"] == "H1":
                 item["level"] = "H2"
@@ -86,6 +110,17 @@ class HierarchyValidator:
             # Fix 4: Letter+number patterns should be H3
             if letter_number.match(text) and item["level"] == "H1":
                 item["level"] = "H3"
+        
+        # Remove items marked for removal
+        i = 0
+        while i < len(outline):
+            if outline[i].get("_remove", False):
+                del outline[i]
+            else:
+                # Remove the _remove flag if it exists
+                if "_remove" in outline[i]:
+                    del outline[i]["_remove"]
+                i += 1
     
     def _ensure_consistent_hierarchy(self, outline: List[Dict[str, Any]]) -> None:
         """

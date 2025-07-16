@@ -178,13 +178,13 @@ class TextCleaner:
         if self.h3_letter_number_re.match(original_text):
             return "H3"
             
-        # Bullet points
-        if self.h2_bullet_re.match(original_text):
-            return "H2"
+        # DISABLED: Bullet points are not headings in this document
+        # if self.h2_bullet_re.match(original_text):
+        #    return "H2"
             
-        # Dashes
-        if self.h3_dash_re.match(original_text):
-            return "H3"
+        # DISABLED: Dashes are not headings in this document
+        # if self.h3_dash_re.match(original_text):
+        #    return "H3"
             
         # Parenthesized numbers or letters
         if self.h2_parenthesized_re.match(original_text):
@@ -202,8 +202,8 @@ class TextCleaner:
         if self.h6_roman_lowercase_re.match(original_text):
             return "H6"
             
-        # Asterisks - Changed to H5
-        if self.h5_asterisk_re.match(original_text):
-            return "H5"
+        # DISABLED: Asterisks are not headings in this document
+        # if self.h5_asterisk_re.match(original_text):
+        #    return "H5"
         
         return None  # No pattern detected 

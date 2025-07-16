@@ -1,0 +1,18 @@
+{
+  "title": "Understanding PDF Document Structure",
+  "outline": [
+    { "level": "H1", "text": "Introduction", "page": 1 },
+    { "level": "H2", "text": "Document Purpose", "page": 1 },
+    { "level": "H2", "text": "Target Audience", "page": 2 },
+    { "level": "H1", "text": "Technical Approach", "page": 3 },
+    { "level": "H2", "text": "Font Analysis", "page": 3 },
+    { "level": "H3", "text": "Size Detection", "page": 4 },
+    { "level": "H3", "text": "Style Recognition", "page": 5 },
+    { "level": "H2", "text": "Layout Processing", "page": 6 },
+    { "level": "H1", "text": "Multilingual Support", "page": 7 },
+    { "level": "H2", "text": "Western Languages", "page": 7 },
+    { "level": "H2", "text": "Japanese Text", "page": 8 },
+    { "level": "H3", "text": "Character Encoding", "page": 9 },
+    { "level": "H1", "text": "Conclusion", "page": 10 }
+  ]
+} 

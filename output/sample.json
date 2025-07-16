@@ -1,0 +1,445 @@
+{
+  "title": "Core Features",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Student Portal",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Profile Management",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Create/edit student profile",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Upload resume and documents",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Add academic details and skills",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Track performance metrics",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "Job Search",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Browse job/internship opportunities",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Filter by role, company, location",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Save favorite positions",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "View application status",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "Application Tracking",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Track application status",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "View interview schedules",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Receive notifications",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Access placement resources",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "Communication",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Chat with placement cell",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Receive company updates",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Get interview feedback",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Access placement guidelines",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "College Portal",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Student Management",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Manage student profiles",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Track academic performance",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Monitor placement statistics",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Generate reports",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "Placement Drive Management",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Schedule placement drives",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Manage company visits",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Track student participation",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "Generate placement reports",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "Analytics Dashboard",
+      "page": 1
+    },
+    {
+      "level": "H3",
+      "text": "View placement statistics",
+      "page": 1
+    },
+    {
+      "level": "H4",
+      "text": "Core Features",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Track student performance",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Monitor company engagement",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Generate insights",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "Communication Hub",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Connect with companies",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Manage student notifications",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Coordinate placement activities",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Share resources",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Company Portal",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Create/edit company profile",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Set recruitment criteria",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Manage job postings",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "Recruitment Tools",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Post job/internship positions",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Review applications",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Schedule interviews",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Manage placement drives",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "Candidate Search",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Browse student profiles",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Filter by skills/performance",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Shortlist candidates",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Track recruitment pipeline",
+      "page": 2
+    },
+    {
+      "level": "H4",
+      "text": "Analytics",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "View application metrics",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Track recruitment success",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Help & Services",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Support Center",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "FAQ section",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Knowledge base",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "Tutorial videos",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "User guides",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "Documentation",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Platform guidelines",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Best practices",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Policy documents",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Terms of service",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Sales & Support Panel",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "User Management",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Handle user registrations",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Manage verifications",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Resolve issues",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Monitor platform activity",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "Support Tools",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Ticket management",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Live chat support",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Email support",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "User feedback system",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Track platform usage",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Monitor user engagement",
+      "page": 3
+    },
+    {
+      "level": "H3",
+      "text": "Identify improvement areas",
+      "page": 3
+    },
+    {
+      "level": "H4",
+      "text": "Each portal is designed to provide a seamless experience for its specific user type while maintaining security and data",
+      "page": 3
+    },
+    {
+      "level": "H5",
+      "text": "privacy. The features are implemented using React for the frontend, Node.js for the backend, and MongoDB for data",
+      "page": 3
+    },
+    {
+      "level": "H6",
+      "text": "storage, ensuring scalability and performance.",
+      "page": 3
+    }
+  ]
+}

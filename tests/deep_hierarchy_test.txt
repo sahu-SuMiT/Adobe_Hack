@@ -1,0 +1,76 @@
+Sample Document with Deep Hierarchy
+
+1. Introduction
+This is the introduction section.
+
+1.1 Background
+This provides background information.
+
+1.1.1 Historical Context
+Historical details about the subject.
+
+1.1.1.1 Ancient Period
+Information about ancient period.
+
+1.1.1.1.1 Prehistoric Era
+Details about the prehistoric era.
+
+1.1.1.1.1.1 Early Humans
+Information about early humans.
+
+2. Methods
+This section describes the methods.
+
+2.1 Data Collection
+How data was collected.
+
+2.1.1 Survey Methodology
+Details about survey methodology.
+
+2.1.1.1 Questionnaire Design
+Information about questionnaire design.
+
+a) Multiple Choice Questions
+Details about multiple choice questions.
+
+b) Open-Ended Questions
+Information about open-ended questions.
+
+i) Short Answers
+Details about short answer questions.
+
+ii) Extended Responses
+Information about extended response questions.
+
+* Important Note
+An important note about the questions.
+
+2.1.2 Interview Protocol
+Details about interview protocol.
+
+3. Results
+These are the results.
+
+• Key Finding 1
+First important finding.
+
+• Key Finding 2
+Second important finding.
+
+[1] Reference Item
+First reference.
+
+(A) Appendix Item
+First appendix item.
+
+A1. Supplementary Material
+Additional materials.
+
+- Note Item
+Important note.
+
+IV. Discussion
+Discussion of the results.
+
+A. Appendix
+Supplementary information. 

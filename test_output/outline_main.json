@@ -1,0 +1,105 @@
+{
+  "title": "Core Features",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "Student Portal",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Profile Management",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Job Search",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Application Tracking",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Communication",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "College Portal",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Student Management",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Placement Drive Management",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Analytics Dashboard",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "Communication Hub",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Company Portal",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Recruitment Tools",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Candidate Search",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Analytics",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Help & Services",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Support Center",
+      "page": 2
+    },
+    {
+      "level": "H1",
+      "text": "Documentation",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Sales & Support Panel",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "User Management",
+      "page": 3
+    },
+    {
+      "level": "H1",
+      "text": "Support Tools",
+      "page": 3
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "This is the document title",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "This is a heading level 1",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "This is heading level 2",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "This is another heading level 2",
+      "page": 1
+    },
+    {
+      "level": "H1",
+      "text": "This is another heading level 1",
+      "page": 1
+    }
+  ]
+}

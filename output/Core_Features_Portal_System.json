@@ -58,21 +58,6 @@
     },
     {
       "level": "H3",
-      "text": "Track student performance",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Monitor company engagement",
-      "page": 2
-    },
-    {
-      "level": "H3",
-      "text": "Generate insights",
-      "page": 2
-    },
-    {
-      "level": "H3",
       "text": "Communication Hub",
       "page": 2
     },
@@ -114,11 +99,6 @@
     {
       "level": "H1",
       "text": "Core Features",
-      "page": 3
-    },
-    {
-      "level": "H3",
-      "text": "User guides",
       "page": 3
     },
     {

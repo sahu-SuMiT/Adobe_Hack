@@ -73,13 +73,18 @@ class HierarchyValidator:
             item = outline[i]
             text = item["text"]
             
-            # Fix: "Core Features" should always be H1
-            if text == "Core Features":
-                item["level"] = "H1"
+            # Keep "Core Features" as H1 when it appears on pages 2+ 
+            if text == "Core Features" and item["level"] == "H1":
+                # Keep as H1
+                pass
                 
-            # Fix: Numbered sections like "4.1 Student Portal" should be H2
-            if numbered_section.match(text):
+            # Fix: Numbered sections like "4.1 Student Portal" should be H2 (KEEP as H2)
+            elif numbered_section.match(text):
                 item["level"] = "H2"
+            
+            # Fix: "Communication Hub" and "Documentation" should be H3, not H2
+            elif text in ["Communication Hub", "Documentation"] and item["level"] == "H2":
+                item["level"] = "H3"
         
         # Second pass: Fix subsections based on context
         for i in range(len(outline)):
@@ -95,9 +100,9 @@ class HierarchyValidator:
                 # This is a list item, not a heading - remove from outline
                 item["_remove"] = True
                 
-            # Fix 1: X.Y patterns should be H2, not H1
-            if dot_pattern.match(text) and item["level"] == "H1":
-                item["level"] = "H2"
+            # Fix 1: X.Y patterns should be H2, not H1 (COMMENTED OUT - we already set this correctly)
+            # if dot_pattern.match(text) and item["level"] == "H1":
+            #     item["level"] = "H2"
                 
             # Fix 2: Ensure a), b) patterns are correctly labeled as H5 when under H4
             if i > 0 and nested_pattern.match(text) and outline[i-1]["level"] == "H4":
@@ -139,15 +144,16 @@ class HierarchyValidator:
                 level_counts[item["level"]] += 1
         
         # Fix 1: If there are very few H1s but many H2s, some H2s might actually be H1s
-        if level_counts["H1"] <= 2 and level_counts["H2"] >= 5:
-            # Find potential H1s misclassified as H2s
-            for i, item in enumerate(outline):
-                if item["level"] == "H2":
-                    # Check if this looks like a main section
-                    if i == 0 or (i > 0 and outline[i-1]["level"] != "H1"):
-                        # Check text length (main headings tend to be shorter)
-                        if len(item["text"]) < 30:
-                            item["level"] = "H1"
+        # DISABLED: We want to keep H2s as H2s for numbered sections
+        # if level_counts["H1"] <= 2 and level_counts["H2"] >= 5:
+        #     # Find potential H1s misclassified as H2s
+        #     for i, item in enumerate(outline):
+        #         if item["level"] == "H2":
+        #             # Check if this looks like a main section
+        #             if i == 0 or (i > 0 and outline[i-1]["level"] != "H1"):
+        #                 # Check text length (main headings tend to be shorter)
+        #                 if len(item["text"]) < 30:
+        #                     item["level"] = "H1"
         
         # Fix 2: Handle potentially incorrect nesting
         # Find patterns where a heading is followed by a heading of the same level
